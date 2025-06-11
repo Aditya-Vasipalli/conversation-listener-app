@@ -1,0 +1,22 @@
+{
+  "name": "conversation-listener-app",
+  "version": "1.0.0",
+  "description": "An application that listens to conversations and displays the transcript.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0",
+    "speech-to-text": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "live-server": "^1.2.1"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
