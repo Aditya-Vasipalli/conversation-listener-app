@@ -22,6 +22,8 @@ h1 {
     margin: 10px 0;
     padding: 10px;
     border-radius: 4px;
+    background: #f8f9fa;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .transcript-item.user {
@@ -30,6 +32,22 @@ h1 {
 
 .transcript-item.assistant {
     background-color: #ffe0b2;
+}
+
+.speaker-1 {
+    border-left: 4px solid #007bff;
+}
+
+.speaker-2 {
+    border-left: 4px solid #28a745;
+}
+
+.speaker-3 {
+    border-left: 4px solid #ffc107;
+}
+
+.speaker-4 {
+    border-left: 4px solid #dc3545;
 }
 
 button {

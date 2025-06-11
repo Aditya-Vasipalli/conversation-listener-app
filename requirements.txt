@@ -1,0 +1,6 @@
+# Backend for lightweight speaker diarization
+Flask
+webrtcvad
+numpy
+scikit-learn
+librosa
