@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Build output
+src/bundle.js
+src/bundle.js.LICENSE.txt
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+.env
+.env.*
+
+# VSCode
+.vscode/

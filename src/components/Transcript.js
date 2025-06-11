@@ -1,21 +1,13 @@
-class Transcript {
-    constructor() {
-        this.transcriptContainer = document.getElementById('transcript-content');
-    }
+import React from 'react';
 
-    updateTranscript(text) {
-        // Only add if text is not empty and not the same as the last entry
-        if (!text) return;
-        const lastEntry = this.transcriptContainer.lastElementChild;
-        if (lastEntry && lastEntry.textContent === text) return;
-        const transcriptEntry = document.createElement('p');
-        transcriptEntry.textContent = text;
-        this.transcriptContainer.appendChild(transcriptEntry);
-    }
-
-    clearTranscript() {
-        this.transcriptContainer.innerHTML = '';
-    }
+function Transcript({ transcript, interim }) {
+  // Split transcript by newlines and render each as a paragraph
+  return (
+    <div className="transcript-content">
+      {transcript.split('\n').map((line, idx) => line && <p key={idx}>{line}</p>)}
+      {interim && <p style={{ opacity: 0.6 }}>{interim}</p>}
+    </div>
+  );
 }
 
 export default Transcript;
